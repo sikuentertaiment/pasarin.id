@@ -1,0 +1,293 @@
+@font-face{
+	font-family:'montserratbold';
+	src:url('../media/Poppins/montserratbold.ttf');
+}
+@font-face{
+	font-family:'poppinslight';
+	src:url('../media/Poppins/PoppinsLight.ttf');
+}
+@font-face{
+	font-family:'geogiafont';
+	src:url('../media/Poppins/GeorgiaEstate-w15Mn.ttf');
+}
+@font-face{
+	font-family:'montserratregular';
+	src:url('../media/Poppins/Montserrat-Regular.ttf');
+}
+@font-face{
+	font-family:'montserratbold';
+	src:url('../media/Poppins/Montserrat-Bold.ttf');
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+div{
+  scrollbar-color: white white;
+  scrollbar-width: thin;
+}
+.smartBorder{
+	border: 2px solid whitesmoke;
+}
+body{
+	padding:0;
+  margin:0;
+  position:absolute;
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+	font-family:'montserratregular';
+  -webkit-tap-highlight-color:transparent;
+  user-select:none;
+	scrollbar-color: white white;
+  scrollbar-width: thin;
+}
+main{
+	scrollbar-color: white white;
+	scrollbar-width: thin;
+}
+input,textarea{
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 0;
+	padding: 7px 14px;
+	height: 40px;
+	outline: none;
+	font-size: 14px;
+	font-weight: 300;
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+	-webkit-transition: all .2s ease;
+	transition: .25s ease;
+	box-shadow: none;
+	background:whitesmoke;
+	font-family:montserratregular;
+	scrollbar-color: white white;
+	scrollbar-width: thin;
+}
+select{
+	background:whitesmoke;
+	border:1px solid gainsboro;
+	width: 100%;
+	padding:10px;
+	outline:none;
+}
+.button{
+	border: none;
+	border-radius: 20px;
+	background: deepskyblue;
+	color: #fff;
+	padding: 0 20px;
+	line-height: 40px;
+	height: 40px;
+	display: inline-block;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	outline: 0;
+	-webkit-appearance: none;
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+}
+.buttonstyled{
+	background:deepskyblue;
+	color:white;
+	border-radius: 10px;
+}
+.innerBox{
+	width:600px;
+}
+.smartHeight{
+	height:60%;
+}
+#newartilebuttons div:hover div{
+	background:gray;
+	color:white;
+	border-radius:20px;
+}
+#ourmenu div{
+	cursor: pointer;
+	text-align: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	font-weight: bold;
+	flex-direction: column;
+	font-size: 11px;
+	padding: 0 10px;
+	white-space: nowrap;
+	gap:3px;
+}
+.star{
+	color:red;
+	margin-left:2px;
+}
+.sosmall{
+	font-size:9px;
+}
+#ourmenu div:hover img{
+	width:26px;
+	height:26px;
+}
+
+.newpostmenu{
+	display:flex;
+	gap:8px;
+	align-items:center;
+	height:100%;
+	margin:20px 20px 40px 20px;
+	justify-content:flex-start;
+	flex-direction:column;
+}
+.newpostmenu .child{
+	display: flex;
+	/* flex-direction: column; */
+	align-items: center;
+	gap: 18px;
+	font-family: montserratbold;
+	cursor: pointer;
+	width: 100%;
+	min-height: 50px;
+	padding: 15px;
+	/* justify-content: center; */
+	border-radius: 10px;
+	color:dimgray;
+	border-bottom:3px solid deepskyblue;
+	border-right:2px solid deepskyblue;
+}
+.newpostmenu div img{
+	width:24;
+	height:24;
+	background:white;
+	padding:10px;
+	border-radius:10px;
+}
+
+
+.fitborder{
+	border:border:1px solid rgb(232, 232, 232);
+}
+
+.bold{
+	font-family:montserratbold;
+}
+
+.lines{
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction:column;
+}
+.lines .item{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	color:dimgray;
+}
+
+.lines .title:hover{
+	text-decoration:underline;
+	cursor: pointer;
+}
+.lines .username:hover{
+	text-decoration:underline;
+	cursor: pointer;
+}
+
+.item .thumbnail{
+	/* height: 48px; */
+	margin: 2%;
+	/* background: black; */
+	text-align: center;
+}
+.item .thumbnail div{
+	font-size:20px;
+	font-weight:bold;
+	padding:10px;
+	border-radius:0 50px 50px;
+	background:deepskyblue;
+	color:white;
+	width: 16;
+	height: 16;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-bottom:2px solid gainsboro;
+	border-right:2px solid gainsboro;
+}
+
+.item .moreinfo{
+	height:26%;
+	margin:2%;
+	width:100%;
+}
+.moreinfo .title{
+	display:flex;
+	align-items:center;
+	font-size:18px;
+	margin-bottom:5px;
+	font-family:montserratbold;
+}
+.moreinfo .addressinfo{
+	display:flex;
+	gap:10px;
+	align-items:center;
+	height:50%;
+}
+.vshareinfo{
+	display:flex;
+	gap:10px;
+	align-items:center;
+	height:50%;
+	margin-top:5px;
+}
+.vshareinfo div{
+	display:flex;
+	gap:8px;
+	padding:2px 5px;
+	border-radius:20px;
+	align-items:center;
+}
+.addressinfo .date{
+}
+
+.navimg{
+	width:21px;
+	height:21px;
+}
+.profileimg{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+}
+.username{
+	cursor:pointer;
+}
+.username:hover{
+	text-decoration:underline;
+}
+@media screen and (max-width:900px){
+	.innerBox{
+		width:100%;
+	}
+	.fitborder{
+		border-left:none;
+		border-right:none;
+	}
+	.moreinfo .addressinfo{
+		font-size:smaller;
+	}
+	.smartHeight{
+		height:100%;
+	}
+	.smartBorder{
+		border:none;
+	}
+}
